@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "Hello World Again"
+    return "Hello World"
 
 
-@app.route("/file", methods=["GET"])
-def hello_world():
+@app.route("/file")
+def file():
     return render_template("index.html")
 
 
